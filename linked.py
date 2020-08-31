@@ -27,6 +27,14 @@ class Linkedlist:
             print(currentnode.data)
             currentnode = currentnode.next
 
+    def length(self):
+        currentnode = self.head
+        count = 0
+        while currentnode.next is not None:
+            count += 1
+            currentnode = currentnode.next
+        print(count)
+
 
 first_ele = Node("harith")
 linkedlist = Linkedlist()
@@ -34,3 +42,4 @@ linkedlist.insertend(first_ele)
 second_ele = Node("harshith")
 linkedlist.insertend(second_ele)
 linkedlist.printlist()
+linkedlist.length()
