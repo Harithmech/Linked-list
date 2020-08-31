@@ -18,5 +18,17 @@ class Linkedlist:
                 else:
                     last_node = last_node.next
             last_node.next = ele
+
+    def printlist(self):
+        currentnode = self.head
+        while True:
+            if currentnode is None:
+                break
+            print(currentnode.data)
+            currentnode = currentnode.next
+
+
 first_ele = Node("harith")
 linkedlist = Linkedlist()
+linkedlist.insertend(first_ele)
+linkedlist.printlist()
