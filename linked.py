@@ -13,7 +13,7 @@ class Linkedlist:
         else:
             last_node = self.head
             while True:
-                if last_node is None:
+                if last_node.next is None:
                     break
                 else:
                     last_node = last_node.next
@@ -31,4 +31,6 @@ class Linkedlist:
 first_ele = Node("harith")
 linkedlist = Linkedlist()
 linkedlist.insertend(first_ele)
+second_ele = Node("harshith")
+linkedlist.insertend(second_ele)
 linkedlist.printlist()
